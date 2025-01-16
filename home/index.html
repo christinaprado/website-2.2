@@ -1,7 +1,8 @@
 <!DOCTYPE html>    
 <html>    
-<head>    
-<title>Page Title</title>    
+<head>
+  <link rel="stylesheet" href="css/flexbox-grid.css?version=0.3">    
+<title>Flexbox and Grid Title</title>    
 <style>
   body {
     background-color: lightblue;
@@ -23,20 +24,44 @@
 
 <h1>Personal Profile Web page</h1>    
 
-<p>Hi! My name is Christina Prado, I am a second-year college student in Asia Pacific College taking the course BSIT-MI.</p>  
-
-<p>BSIT-MI, Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies</p>    
-
-<p>When it comes to my experience with IT, I first learned to code using HTML when I was in 9th grade and I really enjoyed it,
-and that encouraged me to take IT. I also really enjoyed creating an ERD Diagaram on our DATAMA! subject.</p>    
-
-<p>My hobbies are exploring, walking, eating out with friends, cleaning, organizing, and interacting with my dogs</p>
-
-<p>My goals in life are having multiple streams of income, be financially stable, and living a long healthy life.</p>
-
-<img src="images/448254212_1529811731302325_2685371038792432885_n.jpg">
-
-<p>Here is a picture of me during my trip to Doha, Qatar.</p>
+<div class="container">
+  <header>
+    <h1>Personal Profile Web Page</h1>
+  </header>
+  <main>
+    <section class="main-content">                
+      <div>
+        Hi! My name is Christina Prado, I am a second-year college student in Asia Pacific College taking the course BSIT-MI.
+      </div>
+      <div>
+        BSIT-MI, Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies.
+      </div>
+      <div>
+        When it comes to my experience with IT, I first learned to code using HTML when I was in 9th grade and I really enjoyed it,
+        and that encouraged me to take IT. I also really enjoyed creating an ERD Diagram on our DATAMA! subject.
+      </div>  
+      <div>
+        My hobbies are exploring, walking, eating out with friends, cleaning, organizing, and interacting with my dogs.
+      </div>
+      <div>
+        My goals in life are having multiple streams of income, being financially stable, and living a long healthy life.
+      </div>
+      <div>
+        <img src="images/448254212_1529811731302325_2685371038792432885_n.jpg" 
+        width="500" height="600" alt="Photo during a trip to Doha, Qatar">
+      </div>
+      <div>
+        Here is a picture of me during my trip to Doha, Qatar.
+      </div>
+    </section>
+    <aside class="sidebar">
+      <p>Asia Pacific College Student<br>BSIT-MI Program</p>
+    </aside>
+  </main>
+  <footer>
+    Asia Pacific College
+  </footer>
+</div>
 
 </body>    
 </html>
