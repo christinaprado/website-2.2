@@ -1,42 +1,123 @@
-<!DOCTYPE html>    
-<html>    
-<head>    
-<title>Page Title</title>    
-<style>
-  body {
-    background-color: lightblue;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+        .note {
+            font-size: smaller;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Information Form</h1>
 
-  h1 {
-    color: white;
-    text-align: center;
-    font-size: 50px;
-  }
+        <div class="section">
+            <div class="section-title">PART 1. PATIENT INFORMATION</div>
+            <div class="input-group">
+                <label for="title">Title</label>
+                <select id="title">
+                    <option value="mr">Mr.</option>
+                    <option value="ms">Ms.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="dr">Dr.</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name">
+            </div>
+            <div class="input-group">
+                <label for="middle-name">Middle Name</label>
+                <input type="text" id="middle-name">
+            </div>
+            <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name">
+            </div>
+             <div class="input-group">
+                <label for="suffix">Suffix</label>
+                <select id="suffix">
+                    <option value="jr">Jr.</option>
+                    <option value="sr">Sr.</option>
+                    <option value="ii">II</option>
+                    <option value="iii">III</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone Number (+63)</label>
+                <input type="tel" id="phone">
+            </div>
+        </div>
 
-  p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 35px;
-  }
-</style>
-</head>    
-<body>  
+        <div class="section">
+            <div class="section-title">PART 2. PRE-ARRANGED VISIT DETAILS</div>
+            <div class="input-group">
+                <label for="location">Location</label>
+                <select id="location">
+                    <option value="">- Fill Out Other Fields -</option>
+                    </select>
+            </div>
+            <div class="input-group">
+                <label for="specialization">Specialization</label>
+                <select id="specialization">
+                    <option value="">- Fill Out Other Fields -</option>
+                    </select>
+            </div>
+            <div class="input-group">
+                <label for="preferred-date">Preferred Date of Visit</label>
+                <input type="date" id="preferred-date">
+            </div>
+            <div class="note">REMINDER: Please note that the doctor's schedule might change without prior notice.</div>
+        </div>
 
-<h1>Personal Profile Web page</h1>    
-
-<p>Hi! My name is Christina Prado, I am a second-year college student in Asia Pacific College taking the course BSIT-MI.</p>  
-
-<p>BSIT-MI, Bachelor of Science in Information Technology with specialization in Mobile and Internet Technologies</p>    
-
-<p>When it comes to my experience with IT, I first learned to code using HTML when I was in 9th grade and I really enjoyed it,
-and that encouraged me to take IT. I also really enjoyed creating an ERD Diagaram on our DATAMA! subject.</p>    
-
-<p>My hobbies are exploring, walking, eating out with friends, cleaning, organizing, and interacting with my dogs</p>
-
-<p>My goals in life are having multiple streams of income, be financially stable, and living a long healthy life.</p>
-
-<img src="images/448254212_1529811731302325_2685371038792432885_n.jpg">
-
-<p>Here is a picture of me during my trip to Doha, Qatar.</p>
-
-</body>    
+        <div class="section">
+            <div class="section-title">PART 3. MEDICAL HISTORY</div>
+            <div class="input-group">
+                <label for="reason">Reason for Consult</label>
+                <textarea id="reason" rows="4"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="other-info">Other pertinent medical information</label>
+                <textarea id="other-info" rows="4"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
